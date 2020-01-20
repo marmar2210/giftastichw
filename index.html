@@ -1,0 +1,56 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GIPHY FISHY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-image: url("6404.jpg");
+      }
+      button {
+        margin: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+
+    <h1>Welcome to GIPHY FISHY!</h1>
+    <h3>Design your Aquarium</h3>
+    <p>Click the buttons to add to your aquarium!</p>
+    <div id="buttonHolder"></div>
+
+    <br />
+
+    <form id="animal-form">
+      <label for="animal-input"
+        >Enter new animal to create a new button that adds to your
+        aquarium!</label
+      >
+      <br />
+      <input type="text" id="animal-input" />
+      <br />
+
+      <input id="add-animal" type="submit" value="submit" />
+    </form>
+
+    <p>Click on the gifs and see them interact with you!</p>
+
+    <div id="gifs-appear-here"></div>
+
+    <script src="giphy.js"></script>
+  </body>
+</html>
